@@ -10,9 +10,5 @@ public class Multiple {
         System.out.println("1 * 7 = 7");
         System.out.println("1 * 8 = 8");
         System.out.println("1 * 9 = 9");
-
-        //for (int i = 2; i < 10; i++) {
-        //     System.out.printf("1 * %d = %d\n", i, 1 * i);
-        // }
     }
 }
