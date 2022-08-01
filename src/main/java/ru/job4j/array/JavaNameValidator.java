@@ -6,13 +6,10 @@ public class JavaNameValidator {
             return false;
         }
         for (int i = 1; i < name.length(); i++) {
-            if (name.codePointAt(i) == 36 || name.codePointAt(i) == 95) {
-                continue;
-            } else if (name.codePointAt(i) >= 65 && name.codePointAt(i) <= 90) {
-                continue;
-            } else if (name.codePointAt(i) >= 48 &&  name.codePointAt(i) <= 57) {
-                continue;
-            } else if (name.codePointAt(i) > 122 &&  name.codePointAt(i) < 97) {
+            if ((name.codePointAt(i) != 36 && name.codePointAt(i) != 95)
+                    && (name.codePointAt(i) < 65 || name.codePointAt(i) > 90)
+                    && (name.codePointAt(i) < 48 ||  name.codePointAt(i) > 57)
+                    && (name.codePointAt(i) > 122 ||  name.codePointAt(i) < 97)) {
                 return false;
             }
         }
