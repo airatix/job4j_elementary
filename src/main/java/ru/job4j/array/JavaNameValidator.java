@@ -15,8 +15,4 @@ public class JavaNameValidator {
         }
         return true;
     }
-
-    public static void main(String[] args) {
-        System.out.println(isNameValid("wert_3455"));
-    }
 }
